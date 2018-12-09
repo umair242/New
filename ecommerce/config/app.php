@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+// laravel collective////
         /*
          * Application Service Providers...
          */
