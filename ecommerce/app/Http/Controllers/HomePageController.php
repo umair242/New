@@ -4,16 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class HomePageController extends Controller
+class HomePageController extends ViewCompilingController
 {
     //
-    public function gethomepage(){
+    public function getHomePage(){
       //  echo "my home page function";
-        return view ('homepage');
-    //dd(config('pages.home'));
-      //  return view('home');
-    }
-        
-    }
+       /// return view ('homepage');
+   // dd(config('Pages.home'));
+     // return view('home');
+   // }
+    return $this->buildPages('home');  
+   }
 
 
+}

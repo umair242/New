@@ -14,8 +14,9 @@
 //Route::get('/', function () {
   //  return view('welcome');
 
-Route::get('/','HomePageController@gethomepage');
-Route::get('/registration','UserController@etRegistrationPage');
+Route::get('/','HomePageController@getHomePage');
+Route::get('/registration','UserController@getRegistrationPage');
+Route::get('/registration','UserController@postRegistrationform');
 
 
 
