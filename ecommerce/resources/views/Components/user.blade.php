@@ -1,6 +1,8 @@
+<html lang="en">
 <div class="col-md-8 col-sm-8">
-
-    <h1>User Registration</h1>
+ <br>
+    <h2><i>User Registration</i></h2> <br>
+  
     <h3 class="{{!empty($message_class) ? $message_class : ''}}">{{!empty($message) ? $message : ''}}</h3>
     @if(!empty($errors))
     <ul>
@@ -12,45 +14,48 @@
 
     {!! Form::open(['url' => '/registration', 'files' => true]) !!}
     <div class="form-group">
-        {{ Form::label('name:', null) }}
+        {{ Form::label('name:', null) }} <br>
+        
         {{ Form::text('name', '', ['placeholder' => '']) }}
-    </div>
+    </div> <br>
     <div class="form-group">
-        {{ Form::label('user name:', null) }}
+        {{ Form::label('user name:', null) }}<br>
         {{ Form::text('user_name', '', ['placeholder' => '' , 'class' => 'user_name']) }}
-    </div>
+    </div> <br>
     <div class="form-group">
-        {{ Form::label('email:', null) }}
+        {{ Form::label('email:', null) }}<br>
         {{ Form::email('email', '') }}
-    </div>
+    </div> <br>
     <div class="form-group">
-        {{ Form::label('password:', null) }}
+        {{ Form::label('password:', null) }}<br>
         {{ Form::password('password') }}
-    </div>
+    </div> <br>
     <div class="form-group">
-        {{ Form::label('retype_password:', null) }}
+        {{ Form::label('retype_password:', null) }}<br>
         {{ Form::password('retype_password' ) }}
-    </div>
+    </div> <br>
     <div class="form-group">
+        {{ Form::label('Gender:', null) }}<br>
         {{ Form::label('Male:', null) }}
         {{ Form::radio('gender', 'male', true)}}
         {{ Form::label('Fe-Male:', null) }}
         {{ Form::radio('gender', 'fe-male')}}
-    </div>
+    </div> <br>
     <div class="form-group">
-        {{ Form::label('dob', 'Date of Birth:') }}
+        {{ Form::label('dob', 'Date of Birth:') }}<br>
         {{ Form::date('dob', \Carbon\Carbon::now()) }}
-    </div>
+    </div> <br>
     <div class="form-group">
         {{ Form::label('Select Country :', null) }}
         {{  Form::select('country', ['Pakistan' , 'India']) }}
-    </div>
+    </div> <br>
     <div class="form-group">
-        {{ Form::label('Profile Image:', null) }}
+        {{ Form::label('Profile Image:', null) }} <br>
         {{ Form::file('image') }}
-    </div>
+    </div> <br>
     {{ Form::submit('Register' , ['class' => 'btn btn-success']) }}
 
     {!! Form::close() !!}
 
 </div>
+</html>

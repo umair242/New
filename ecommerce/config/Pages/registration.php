@@ -25,16 +25,17 @@ return [
 'headerSection' => [
     'main_nav',
     'logo',
-    //'cart',
-    //'left_nav'
+   
+   // 'cart',
+   // 'left_nav'
     ],  
     
 'leftSection' => [
     'menu',
-    'user',
+     'user'
    // 'main_slider',
    // 'right_nav',
-   // 'products'
+  //  'products'
 ],  
     
 'FooterSection' => [

@@ -5,7 +5,7 @@
 			</div>
 			<div class="account_desc">
 				<ul>
-					<li><a href="#">Register</a></li>
+					<li><a href="{{url('/registration')}}">Register</a></li>
 					<li><a href="#">Login</a></li>
 					<li><a href="#">Delivery</a></li>
 					<li><a href="#">Checkout</a></li>

@@ -16,7 +16,7 @@
 
 Route::get('/','HomePageController@getHomePage');
 Route::get('/registration','UserController@getRegistrationPage');
-Route::get('/registration','UserController@postRegistrationform');
+Route::post('/registration','UserController@postRegistrationform');
 
 
 
