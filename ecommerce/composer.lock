@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0214cb7b124470e9bcff2c16f9e8adbc",
+    "content-hash": "13272ac59cf0270467d1f17625b3dc7d",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -551,7 +551,7 @@
         },
         {
             "name": "intervention/image",
-            "version": "dev-master",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Intervention/image.git",
@@ -5067,9 +5067,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "intervention/image": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

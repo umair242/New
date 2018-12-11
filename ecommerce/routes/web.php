@@ -23,8 +23,8 @@ Route::get('/home','HomePageController@getHomePage');
 
 
 //Route::get('/login','UserController@getloginPage');
-//Route::get('/registration','UserController@getRegistrationPage');
-//Route::post('/registration','UserController@postRegistrationform');
+Route::get('/registration','UserController@getRegistrationPage');
+Route::post('/registration','UserController@postRegistrationform');
 
 
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Validator;
-use image;
+use Image;
 
 class UserController extends ViewCompilingController{
 
@@ -41,7 +41,7 @@ class UserController extends ViewCompilingController{
         $image = $request->file('image');
         
         
-        $image_process = Image::make($request->file('image'));
+      $image_process = Image::make($request->file('image'));
         
         $filename = $request->get('user_name') . '.' . $image->getClientOriginalExtension();
         
@@ -56,15 +56,15 @@ class UserController extends ViewCompilingController{
         
         $user_uploading_path = public_path('/users/'.$request->get('user_name'));
 
-        $watermark = Image::make(public_path('/img/wmark.png'));
-        $image_process->resize(200, 100);
+       $watermark = Image::make(public_path('/images/wmark.png'));
+       $image_process->resize(500, 100);
         
-        $image_process->insert($watermark, 'center');
+       $image_process->insert($watermark, 'center');
 
         
         
-        $image_process->save($user_uploading_path.'/'.$filename);
-        $image->move($user_uploading_path , $filename);
+       $image_process->save($user_uploading_path.'/'.$filename);
+       $image->move($user_uploading_path , $filename);
             
         dd($request->all());
  
