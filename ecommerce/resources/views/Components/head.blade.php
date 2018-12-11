@@ -1,5 +1,5 @@
 <head>
-<title>Free Home Shoppe Website Template | Home :: w3layouts</title>
+<title>MY Larvel Project</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 

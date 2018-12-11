@@ -42,6 +42,8 @@ return [
     'info',
     'account',
     'contact',
+    'social',
+    'copy_right'
      
 ],  
     'footerJs' => [

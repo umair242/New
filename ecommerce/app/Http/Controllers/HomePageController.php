@@ -8,13 +8,22 @@ class HomePageController extends ViewCompilingController
 {
     //
     public function getHomePage(){
-      //  echo "my home page function";
-       /// return view ('homepage');
-   // dd(config('Pages.home'));
-     // return view('home');
-   // }
-    return $this->buildPages('home');  
+      return $this->buildPages('home');  
+    
+    }
+              public function getContactPage(){
+                return $this->buildPages('Contact_us'); 
    }
-
-
+                public function getNewsPage(){
+                return $this->buildPages('news'); 
+   }
+               public function getDeliveryPage(){
+                return $this->buildPages('delivery'); 
+   }
+               public function getAboutPage(){
+                return $this->buildPages('about'); 
+   }
+               
+                
 }
+

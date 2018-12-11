@@ -1,11 +1,11 @@
 <div class="header_bottom">
 	     	<div class="menu">
 	     		<ul>
-			    	<li class="active"><a href="index.html">Home</a></li>
-			    	<li><a href="about.html">About</a></li>
-			    	<li><a href="delivery.html">Delivery</a></li>
-			    	<li><a href="news.html">News</a></li>
-			    	<li><a href="contact.html">Contact</a></li>
+			    	<li><a href="{{url('/home')}}">Home</a></li>
+			    	<li><a href="{{url('/about')}}">About</a></li>
+			    	<li><a href="{{url('/delivery')}}">Delivery</a></li>
+			    	<li><a href="{{url('/news')}}">News</a></li>
+			    	<li><a href="{{url('/Contact_us')}}">Contact</a></li>
 			    	<div class="clear"></div>
      			</ul>
 	     	</div>

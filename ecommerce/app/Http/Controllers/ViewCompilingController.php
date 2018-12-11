@@ -26,7 +26,7 @@ class ViewCompilingController extends Controller {
         $this->headerJsData = $pageConfig['headerJs'];
         $this->footerJsData = $pageConfig['footerJs'];
 
-        $sections = array('headSection', 'headerSection', 'FooterSection', 'leftSection');
+        $sections = array('headSection', 'headerSection',  'leftSection', 'FooterSection');
 
 
         foreach ($sections as $section) {

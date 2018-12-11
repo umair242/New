@@ -37,9 +37,11 @@ return [
 ],  
     
 'FooterSection' => [
-    'info',
-    'account',
-    'contact',
+   'info',
+   'account',
+   'contact',
+   'social',
+   'copy_right'
      
 ],  
     'footerJs' => [
