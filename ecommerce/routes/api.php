@@ -19,3 +19,4 @@ use Illuminate\Http\Request;
 
 
 Route::post('/v1','ApiController@index');
+Route::get('/v1','ApiController@index');

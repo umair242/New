@@ -8,6 +8,7 @@ class HomePageController extends ViewCompilingController
 {
     //
     public function getHomePage(){
+      //  dd(strlen('$2y$10$RXHKGIFMPRlzP/Usj/CTMueb1pP4D0asquU0j9Rc8bZjAeE7Gqtjq'));
       return $this->buildPages('home');  
     
     }
@@ -23,7 +24,6 @@ class HomePageController extends ViewCompilingController
                public function getAboutPage(){
                 return $this->buildPages('about'); 
    }
-               
-                
+                   
 }
 

@@ -6,6 +6,8 @@
 			    	<li><a href="{{url('/delivery')}}">Delivery</a></li>
 			    	<li><a href="{{url('/news')}}">News</a></li>
 			    	<li><a href="{{url('/Contact_us')}}">Contact</a></li>
+                                <li><a href="{{url('/login')}}">Login</a></li>
+                                <li><a href="{{url('/registration')}}">Register</a></li>
 			    	<div class="clear"></div>
      			</ul>
 	     	</div>
