@@ -24,6 +24,33 @@ class HomePageController extends ViewCompilingController
                public function getAboutPage(){
                 return $this->buildPages('about'); 
    }
-                   
-}
+               public function getmobile_phonesPage(){
+                return $this->buildPages('mobile_phones'); 
+   }
+                public function getdesktopPage(){
+                return $this->buildPages('desktop'); 
+   }               
+               public function getlaptopPage(){
+                return $this->buildPages('laptop'); 
+   }
+               public function getaccessoriesPage(){
+                return $this->buildPages('accessories'); 
+   }
+               public function getSportsPage(){
+                return $this->buildPages('Sports'); 
+   }
+               public function getfootwearPage(){
+                return $this->buildPages('footwear'); 
+   }
+               public function getjewelleryPage(){
+                return $this->buildPages('jewellery'); 
+   }
+               public function getbeautyPage(){
+                return $this->buildPages('beauty'); 
+   }
+   
+   
+   
+   
+                }
 

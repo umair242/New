@@ -36,15 +36,16 @@ return [
    // 'main_slider',
    // 'right_nav',
   //  'products'
-   'Contact_us'
+  // 'admin_nav',
+    'add_products'
 ],  
     
 'FooterSection' => [
    // 'info',
     //'account',
     //'contact',
-     'social',
-    'copy_right'
+     //'social',
+    //'copy_right'
     
      
 ],  

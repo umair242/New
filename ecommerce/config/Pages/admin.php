@@ -23,28 +23,28 @@ return [
     ],
 
 'headerSection' => [
-    'main_nav',
-    'logo',
+   // 'main_nav',
+   // 'logo',
    
    // 'cart',
    // 'left_nav'
     ],  
     
 'leftSection' => [
-    'menu',
+   // 'menu',
     //'user'
    // 'main_slider',
    // 'right_nav',
   //  'products'
-   'Contact_us'
+   'admin_nav'
 ],  
     
 'FooterSection' => [
    // 'info',
     //'account',
     //'contact',
-     'social',
-    'copy_right'
+   //  'social',
+   // 'copy_right'
     
      
 ],  

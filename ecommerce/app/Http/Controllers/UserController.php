@@ -9,8 +9,10 @@ use App\Http\Helpers\ApiCall;
 use App\Http\Models\User;
 
 class UserController extends ViewCompilingController
-{
-//    public $name = 'sad';
+{  
+     public function getloginPage(Request $request){
+        return $this->buildPages('login');
+    }
     public function getRegistrationPage(Request $request){
 //        dd($request->all());
         

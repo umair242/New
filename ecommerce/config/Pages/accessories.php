@@ -32,17 +32,20 @@ return [
     
 'leftSection' => [
     'menu',
+    
     //'user'
-   // 'main_slider',
-   // 'right_nav',
+   //'main_slider',
+    'Coming_Soon',
+   
+// 'right_nav',
   //  'products'
-   'Contact_us'
+  //'Contact_us'
 ],  
     
 'FooterSection' => [
-   // 'info',
-    //'account',
-    //'contact',
+    'info',
+    'account',
+    'contact',
      'social',
     'copy_right'
     

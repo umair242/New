@@ -21,11 +21,21 @@ Route::get('/delivery','HomePageController@getDeliveryPage');
 Route::get('/about','HomePageController@getAboutPage');
 Route::get('/home','HomePageController@getHomePage');
 
+Route::get('/mobile_phones','HomePageController@getmobile_phonesPage');
+Route::get('/desktop','HomePageController@getdesktopPage');
+Route::get('/laptop','HomePageController@getlaptopPage');
+Route::get('/accessories','HomePageController@getaccessoriesPage');
+Route::get('/Sports','HomePageController@getSportsPage');
+Route::get('/footwear','HomePageController@getfootwearPage');
+Route::get('/jewellery','HomePageController@getjewelleryPage');
+Route::get('/beauty','HomePageController@getbeautyPage');
+
 
 Route::get('/login','UserController@getloginPage');
 Route::get('/registration','UserController@getRegistrationPage');
 Route::post('/registration','UserController@postRegistrationform');
 
-
-
+Route::get('/lp-admin','AdminController@getHomePage');
+Route::get('/lp-admin/add-product','ProductController@getAddProductPage');
+Route::post('/lp-admin/add-product','ProductController@postAddProductPage');
 

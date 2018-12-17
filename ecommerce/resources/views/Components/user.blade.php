@@ -33,7 +33,11 @@
         {{ Form::label('dob', 'Date of Birth:') }}<br>
         {{ Form::date('dob', \Carbon\Carbon::now()) }}
     </div>
-    
+<br>
+     <div class="form-group">
+        {{ Form::label('Select Country :', null) }}
+        {{  Form::select('country', $country_list) }}
+    </div>
     <div class="form-group"><br>
         {{ Form::label('Profile Image:', null) }}<br>
         {{ Form::file('image') }}
