@@ -11,10 +11,18 @@
 			    	<div class="clear"></div>
      			</ul>
 	     	</div>
-	     	<div class="search_box">
+	     <!--	<div class="search_box">
 	     		<form>
 	     			<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
 	     		</form>
 	     	</div>
-	     	<div class="clear"></div>
+	     	</div>-->
+             </div>
+              <div class="form-group">
+                    {{ Form::label('searchbar:', null) }}
+                    {{ Form::text('searchbar', '', ['placeholder' => '' , 'id' => 'searchText' , 'class' => 'searchbar' ]) }}
+                </div>
+                <input type="submit" id="searchBtn" onclick="event.preventDefault();getSearchProducts()" value="search">
+             <div class="clear">
+             
 	     </div>

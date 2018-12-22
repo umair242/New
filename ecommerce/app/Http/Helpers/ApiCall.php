@@ -17,7 +17,7 @@ class ApiCall {
         $data['api_token'] = env('API_TOKEN');
         
         $debug_api =  $apiUrl . '?api_data=' . json_encode($data);
-//       dd($debug_api);
+      // dd($debug_api);
         
         $curl = curl_init();
         

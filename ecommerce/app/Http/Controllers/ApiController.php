@@ -19,7 +19,7 @@ class ApiController extends Controller {
             $final_data['status'] = 404;
             $final_data['message'] = 'api_data key is missing';
             $final_data['result'] = [];
-            $final_data['count'] = '';
+            $final_data['count'] = '[]';
             return json_encode($final_data);
         }
 

@@ -161,7 +161,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        //Darryldecode\Cart\CartServiceProvider::class,
+        
+        
         /*
          * Package Service Providers...
          */
@@ -179,10 +181,10 @@ return [
 
         // laravel collective////
         Collective\Html\HtmlServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class
+        Intervention\Image\ImageServiceProvider::class,
         
         
-        
+         'Cart' => Darryldecode\Cart\Facades\CartFacade::class
     ],
 
     /*

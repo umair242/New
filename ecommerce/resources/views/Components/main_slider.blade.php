@@ -2,7 +2,21 @@
 				<div class="categories">
 				  <ul>
 				  	<h3>Categories</h3>
-				      <li><a href="{{url('/mobile_phones')}}">Mobile Phones</a></li>
+				      <li><a href="{{url('/')}}">Mobile Phones</a></li>
+				      <li><a href="{{url('/')}}">Desktop</a></li>
+				      <li><a href="{{url('/')}}">Laptop</a></li>
+				      <li><a href="{{url('/')}}">Accessories</a></li>
+				       <li><a href="{{url('/')}}">Sports &amp; Fitness</a></li>
+				       <li><a href="{{url('/')}}">Footwear</a></li>
+				       <li><a href="{{url('/')}}">Jewellery</a></li>
+				      <li><a href="{{url('/')}}">Beauty &amp; Healthcare</a></li>
+                                       <li><a href="{{url('/')}}">Software</a></li>
+                                       <li><a href="{{url('/')}}">Clothing</a></li>
+				       <li><a href="{{url('/')}}">Home Decor &amp; Kitchen</a></li>
+				        <li><a href="{{url('/')}}">Toys, Kids &amp; Babies</a></li>
+                                        
+                                        
+                                       <!-- <li><a href="{{url('/mobile_phones')}}">Mobile Phones</a></li>
 				      <li><a href="{{url('/desktop')}}">Desktop</a></li>
 				      <li><a href="{{url('/laptop')}}">Laptop</a></li>
 				      <li><a href="{{url('/accessories')}}">Accessories</a></li>
@@ -14,6 +28,7 @@
                                        <li><a href="{{url('/')}}">Clothing</a></li>
 				       <li><a href="{{url('/')}}">Home Decor &amp; Kitchen</a></li>
 				        <li><a href="{{url('/')}}">Toys, Kids &amp; Babies</a></li>
-				  </ul>
+				  -->
+                                       </ul>
 				</div>					
 	  	     </div>

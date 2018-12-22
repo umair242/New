@@ -21,8 +21,9 @@ class Product extends Model {
         return $final_data;
     }
     
-    public static function getProduct($params){
+    public static function getProducts($params){
         $final_data = array();
+        //
         $result   = DB::table('laravel_products')
                 ->where('name', 'like' , "%$params->productSearch%")
                 ->get();
@@ -32,5 +33,7 @@ class Product extends Model {
         $final_data['result'] = $result;
         return $final_data;
     }
+    
+   
 
 }

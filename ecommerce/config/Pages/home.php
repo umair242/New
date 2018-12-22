@@ -15,7 +15,8 @@ return [
     'JsFile_a',
     'JsFile_b',
     'JsFile_c',
-    'JsFile_d'
+    'JsFile_d',
+    //'searchbar'
 ],
 
     'headSection' => [

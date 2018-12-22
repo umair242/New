@@ -15,16 +15,17 @@ class UserController extends ViewCompilingController
     }
     public function getRegistrationPage(Request $request){
 //        dd($request->all());
-        
-        $coutry_list = array(
+      /*  
+        $country_list = array(
             'Pakistan',
             'India',
             'Kenya',
             'China',
             'Iran',
         );
-        
-        $this->viewData['country_list'] = $coutry_list;
+        $this->viewData['country_list'] = $country_list;
+       *  */
+       
         return $this->buildPages('registration');
     }
     public function postRegistrationForm(Request $request){
@@ -40,7 +41,7 @@ class UserController extends ViewCompilingController
             'retype_password' => 'required|same:password',
             'gender' => 'required|min:4',   
             'dob' => 'required|date',   
-            'country' => 'required',   
+           // 'country' => 'required',   
             'image' => 'mimes:jpg,jpeg,png',   
         ];
         
@@ -88,7 +89,7 @@ class UserController extends ViewCompilingController
         $apiData['password'] = md5($request->get('password'));
         $apiData['gender'] = $request->get('gender');
         $apiData['dob'] = $request->get('dob');
-        $apiData['country'] = $request->get('country');
+      //  $apiData['country'] = $request->get('country');
         $apiData['image'] = $filename;
 
         
@@ -103,11 +104,11 @@ class UserController extends ViewCompilingController
         $data['f'] = 'addToUser';
         
         // Assignment
-//        $apiCall->runApiCall('user', 'addToUser' ,  $apiData);
-        $user_result = $apiCall->runApiCall($data);
+       //$apiCall->runApiCall('user', 'addToUser' ,  $apiData);
+      $user_result = $apiCall->runApiCall($data);
         
-//        $result = User::addToUser($apiData);
-//        dd($user_result);
+      // $result = User::addToUser($apiData);
+      //  dd($user_result);
         $this->viewData['registered_message'] = !empty($user_result->message) ? $user_result->message : '';
         
         return $this->buildPages('registration');
